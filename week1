@@ -129,7 +129,7 @@ myStr += "This is the second sentence.";
 
 /* Constructing Strings with Variables */
 var myName = "Nada";
-var myStr = "My name is" +myName + ", ans I am swell!";
+var myStr = "My name is " +myName + ", ans I am swell!";
 
 /* Appending Variables to Strings */
 var someAdjective = "interesting";
