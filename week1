@@ -174,7 +174,7 @@ var secondToLastLetterOfLastName = lastName[lastName.length - 2];
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
     var result = "";
     // Your code below this line
-    result +="My "+myAdjective+" "+myNoun+" "+myVerb+" ery "+myAdverb+".";
+    result +="My "+myAdjective+" "+myNoun+" "+myVerb+" very "+myAdverb+".";
     // Your code above this line
     return result;
 }
