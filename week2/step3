@@ -1,0 +1,85 @@
+/*1. Write a console.log statement saying "Hello World!" for each language that you know.*/
+console.log("Hello World");//English
+console.log("Hej världen");//Swedish
+console.log("مرحبا دنيا"); //Arabic
+/* 2.Consider the following code:
+console.log('I'm awesome');*/
+console.log("I'm Awsome"); 
+/*3. Declare a variable x and initialize it with an integer.*/
+var x;
+console.log('the value of my variable x will be: 7');
+console.log(x=7);
+x=7;
+console.log('the value of my variable x will be: 7');
+console.log(x);
+/*4. Declare a variable y and assign a string to it.*/
+var y;
+console.log('the value of my string will be: My name is Nada');
+console.log(y="Nada");
+y="Nada";
+console.log('the value of my string will be: Nada');
+console.log(y);
+/* 5. How do you round the number 7.25, to the nearest integer?*/
+var z=7.25;
+console.log(z);
+var a=Math.round(7.25);
+console.log(a);
+var l=Math.max(z,a);
+console.log(l);
+/*6. Arrays!*/
+var arr = [ ];
+console.log('the value of array is:Null');
+console.log(arr);
+var myarr =['cats', 'dogs', 'lions', 'jaquar'];
+console.log(myarr);
+myarr.push(["baby pig"]);
+console.log(myarr);
+/*7. More strings*/
+let myString = "this,is,a,test";
+console.log(myString);
+console.log(myString.length);
+/*8. Write a program that checks the types of two variables and prints out SAME TYPE if they are the same type.*/
+
+let foo =3;
+console.log('The value of my variable foo is: integer ' + foo);
+console.log(typeof foo);
+let str ="foo cafe";
+console.log('The value of my variable str is: stríng ' + str);
+console.log(typeof str);
+let boo =true;
+console.log('The value of my variable boo is: boolean ' + boo);
+console.log(typeof boo);
+let obj = {firstName: "Nada", lastName: "Blan"};
+console.log('The vlue of my variable obj is: object ' + obj.firstName, obj.lastName);
+console.log(typeof obj);
+if (foo == str)
+console.log('SAME TYPE');
+else console.log('NOT SAME TYPE');
+if (boo == obj)
+console.log('SAME TYPE');
+else console.log('NOT SAME TYPE');
+if (foo === boo)
+  console.log(' Equal');
+else console.log('Not Equal');
+/*9. If x equals 7, and the only other statement is x = x % 3, what would be the new value of x?*/
+var x =7;
+ x = x % 3;
+console.log(x);
+var x=10;
+x = x % 3;
+console.log(x);
+var x=11;
+x = x % 3;
+console.log(x);
+var x=17;
+x = x % 3;
+console.log(x);
+/*10. Write a program to answer the following questions:*/
+//10.1 Can you store multiple types in an array? Numbers and strings? Make an example that illustrates your answer.
+var newArray = ['plates', 20, 'cups', 25, 'glasses', 30];
+console.log('The value of newArray will be: ' + newArray);
+console.log(newArray);
+//10.2 Can you compare infinities? (Not in Eyad's world) - does 6/0 === 10/0? How can you test this?
+let s = 6/10;
+let n = 10/0;
+console.log(6/10 === 10/0);
