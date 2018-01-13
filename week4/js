@@ -1,0 +1,29 @@
+let myBooks = [ "crystals with chakra", "the prophet", "the woman in black", "safe harbour", "it service management", "outliers", "astronomy", "exploring the night sky", "leo", "hand finishing jewelry"];
+console.log(myBooks);
+
+let len = myBooks.length;
+for (let index = 0; index < len; index++){
+    console.log(myBooks[index]);
+}
+let book1 = {title : 'crystals with chakra', language : 'english', author: 'elizabeth smith'};
+console.log(book1);
+let book2 = {title : 'the prophit', language : 'english', author: 'khalil gibran'};
+console.log(book2);
+let book3 = { title : 'the woman in black', language : 'english', author: 'Susan Hill'};
+console.log(book3);
+let book4 = { title : 'safe harbour', language: 'english', author : 'danielle steel'};
+console.log(book4);
+let book5 = { title: 'it service management', language: 'english', author: 'ernest brewster'};
+console.log(book5);
+let book6 = { title: 'outliers', language: 'english', author: 'malcolm gladwell'};
+console.log(book6);
+let book7 = { title: 'astronomy', language: 'english', author: 'eric chaisson'};
+console.log(book7);
+let book8 = { title: 'exploring the night sky', language: 'english', author: 'terence dickinson'};
+console.log(book8);
+let book9 = { title: 'leo', language: 'english', author: 'joanna martine'};
+console.log(book9);
+let book10 = { title: 'hand finishing jewelry', language: 'english', author: 'lexi erickson'};
+console.log(book10);
+
+
