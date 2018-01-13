@@ -1,0 +1,48 @@
+/* Strings */
+let myString
+myString="hello,this,is,a,difficult,to,read,sentence";
+console.log(myString);
+console.log(myString.length);
+myString="hello this is a dificult to read sentence";
+console.log(myString);
+
+/*Arrays*/
+let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
+favoriteAnimals.push('turtle');
+console.log(favoriteAnimals);
+favoriteAnimals.splice(1,0,'meerkat');
+console.log("I think the new value of the array is", (favoriteAnimals));
+console.log("The array has a length of:",(favoriteAnimals.length));
+favoriteAnimals.splice(3,1);
+console.log(favoriteAnimals);
+let animal = favoriteAnimals.indexOf("meerkat");
+console.log("The item I am looking for is at index:",(animal));
+
+/*Function*/  //1
+
+function add (numm1,numm2,numm3){
+  let addNumber =numm1+numm2+numm3;
+  return addNumber;
+}
+let adding = add(10,20,30)
+console.log(adding);
+/*Function*/ //2
+
+function colorCar(color){
+  let result = color;
+  return result;
+  }
+let carColor = colorCar ('A red car');
+console.log(carColor);
+
+/*Function*/ // 3
+var object;
+function customersData(object){
+  object ={name:'John', age:32, phoneNumber: "000000",}
+  return object;
+  
+}
+console.log(customersData(object));
+
+/*Function*/ // 5
+console.log( [3 === 3] ,"true" || "false");
