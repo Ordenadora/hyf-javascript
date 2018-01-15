@@ -1,0 +1,187 @@
+/* Strings */ //week3
+let myString ="hello,this,is,a,difficult,to,read,sentence";
+console.log(myString);
+console.log(myString.length);
+myString="hello this is a dificult to read sentence";
+console.log(myString);
+/*
+// strings solved by the mentor
+let myString = "hello,this,is,a,difficult,to,read,sentence";
+console.log(myString.length);
+console.log(myString);
+console.log(myString.replace(/,/g," "));
+*/
+/*Arrays*/
+let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
+favoriteAnimals.push('turtle');
+console.log(favoriteAnimals);
+favoriteAnimals.splice(1,0,'meerkat');
+console.log("I think the new value of the array is", (favoriteAnimals));
+console.log("The array has a length of:",(favoriteAnimals.length));
+favoriteAnimals.splice(3,1);
+console.log(favoriteAnimals);
+let animal = favoriteAnimals.indexOf("meerkat");
+console.log("The item I am looking for is at index:",(animal));
+
+/*  //mentor solution for Arrays
+let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
+favoriteAnimals.push("turtle");
+console.log(favoriteAnimals);
+favoriteAnimals.splice(1,0,"meerkat");
+console.log(favoriteAnimals);
+console.log("The array has a length of "+ favoriteAnimals.length);
+favoriteAnimals.splice(3,1); //delete 1 element from index 3
+console.log(favoriteAnimals);
+
+for (let x =0;x<favoriteAnimals.length;x++){
+
+if(favoriteAnimals[x]=="meerkat"){
+
+favoriteAnimals.splice(x,1) ; //
+console.log("The item you are looking for is at index "+x);
+console.log(favoriteAnimals);
+}
+else{
+console.log("I did not find meerkat");
+}
+    }
+var bb = favoriteAnimals.indexOf("meerkat"); //return an integer
+
+if (bb !== -1) {
+
+        favoriteAnimals.splice(bb,1) ; 
+        console.log("The item you are looking for is at index "+bb);
+}else{
+        console.log("I did not find meerkat");
+}  */
+
+/*Function*/  //1
+
+function add (numm1,numm2,numm3){
+  let addNumber =numm1+numm2+numm3;
+  return addNumber;
+}
+let adding = add(10,20,30)
+console.log(adding);
+/*Function*/ //2
+
+function colorCar(color){
+  console.log('a'+" "+ color +" "+ 'car');
+  };
+colorCar("red");
+
+
+/*Function*/ // 3
+var object;
+function customersData(object){
+  object ={name:'John', age:32, phoneNumber: "000000",}
+  return object;
+  
+}
+console.log(customersData(object));
+
+//3 in different way
+/*3.a*/
+function peopleData(obj){
+  for(var i in obj){
+    console.log(i,'',obj[i])
+  }
+}
+peopleData ({name:'Suzanne',age:34,proffession:'lawyer'});
+
+//3 in different way
+/*3.b   is not working
+function peopleData1(arr){
+  for (let i of arr) {
+    console.log(i)
+  }
+}
+propleData1([2,4,5])
+// create the object independently
+var myobj = {name:'Sandra', age:37, profession:'teacher'};
+peopleData(myobj); */
+
+/*Function*/ //4
+function vehicleType(color,code){
+  if(code == 1){
+    console.log("a" + " "+ color+ " " +"car");
+  } else if (code == 2){
+    console.log("a" + " " + color + " " +"motorbike");
+  }
+}
+vehicleType("blue",1);
+
+
+/*Function*/ // 5 in my way
+console.log( [3 === 3] ,"true" || "false");
+
+// 5 in class way
+(3 === 3) ?
+console.log("true"):console.log("false");
+
+// 6 Create a function called vehicle, like before, but takes another parameter called age, so that vehicle("blue", 1, 5) prints "a blue used car"
+function vehicle(color,code,age){
+  if( code == 1 && age == 5){
+    console.log("a" +" "+ color +" "+ "used"+ " " +"car" )
+  }
+}
+vehicle("blue",1,5);
+
+// 7 Make a list of vehicles, you can add "motorbike", "caravan", "bike", or more.
+let vehicleList =["motorbike", "caravan", "bike", "Bmw"];
+let latestelement = vehicleList[2];
+
+//8 How do you get the third element from that list?
+console.log(latestelement);
+
+// 9 Change the function vehicle to use the list of question 7. So that vehicle("green", 3, 1) prints "a green new caravan".
+function vehicle(color,code,age){
+  if(code == 3 && age == 1){
+  console.log("a"+ " " +color+ " " + "new caravan");
+}
+}
+vehicle("green", 3, 1);
+
+// 10 Use the list of vehicles to write an advertisement. So that it prints something like: "Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes.". (Hint: use a for loop.)
+var vehicles = [ "motorbikes", "caravans", "bikes"];
+function advertise(arguments) {
+  for (var i = 0; i < arguments.length; i++){
+    console.log("Amazing Joe's Garage, we service cars, "+arguments[i] + ", "+ arguments[i+1] + " and "+ arguments[i+2]+".");
+    break;
+  }
+}
+advertise(vehicles);
+
+// 11 What if you add one more vehicle to the list, can you have that added to the advertisement without changing the code for question 10?
+vehicles.push("buses");
+console.log(vehicles);
+
+// 12, 13, 14
+let mentors=[{name:"Tommy", languages:"git"},{name:"Johan", languages:"JavaScript"},{name:"Shamrat", languages:"JAvaScript"},{name:"Victor", languages:"HTML and CSS"}]
+console.log("Mentor's name:" + mentors[0].name +" "+ "teachng language"+" "+ mentors[1].languages);
+let len = mentors.length;
+for (let index = 0;  index < len; index++ ) {
+ console.log(mentors[index]); 
+};
+
+// 15
+    let x = [1,2,3];
+    let y = [1,2,3];
+    let z = y;
+if(x == y){
+  console.log("true")}
+  else
+  {console.log("false")
+};
+
+// 16
+let o1 = { foo: 'bar' };
+     let o3 = { foo: 'bar' };
+     let o2 = o1= o3;
+console.log(o2);
+
+// 17
+let bar = 42; 
+typeof typeof bar;
+console.log(typeof bar);
+console.log(typeof typeof bar);
