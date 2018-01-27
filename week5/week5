@@ -1,0 +1,61 @@
+let monday = [
+        {
+            name     : 'Write a summary HTML/CSS',
+            duration : 180
+        },
+        {
+            name     : 'Some web development',
+            duration : 120
+        },
+        {
+            name     : 'Fix homework for class10',
+            duration : 20
+        },
+        {
+            name     : 'Talk to a lot of people',
+            duration : 200
+        }
+    ];
+
+let tuesday = [
+        {
+            name     : 'Keep writing summary',
+            duration : 240
+        },
+        {
+            name     : 'Some more web development',
+            duration : 180
+        },
+        {
+            name     : 'Staring out the window',
+            duration  : 10
+        },
+        {
+            name     : 'Talk to a lot of people',
+            duration : 200
+        },
+        {
+            name     : 'Look at application assignments new students',
+            duration : 40
+        }
+    ];
+let tasks = monday.concat(tuesday);
+let hours = tasks.map(time => time.duration / 60);
+console.log(hours);
+let filtering = hours.filter(time => time < 2);
+console.log (filtering);
+let multi = hours.map(time => time * 20);
+console.log(multi);
+
+/*
+function sum(){
+  for (i=0; i < multi.length; i++)
+  let totalPay = ()
+  console.log(multi);
+  */
+ let calculate = 0;
+for (i=0; i < multi.length; i++){
+  calculate += multi[i];
+};
+console.log('my new total money' + calculate + ' €');
+
