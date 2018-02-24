@@ -1,0 +1,100 @@
+class Movie {
+  constructor(title, director){
+  
+      this.title = title;
+      this.director = director;
+      
+  }
+  getTitle() {
+    // add your code here
+    return this.title;
+  }
+
+  getDirector() {
+    // add your code here
+    return this.director;
+  }
+
+  addStar(Star) {
+    // add your code here
+    this.Star = Star;
+  }
+
+  getStars() {
+    // add your code here
+    return this.name;
+    return this.age;
+    
+  }
+
+  addWriter(writer) {
+    // add your code here
+    this.writer = writer;
+  }
+
+  getWriters() {
+    // add your code here
+    return this.writer;
+  }
+
+  addRating(rating) {
+    // add your code here
+    this.rating = rating;
+  }
+
+  getAverageRating() {
+    // add your code here
+    return this.rating;
+  }
+
+  // ... Add yours :-) Look to IMDB for inspiration
+}
+
+class StaffMember {
+  constructor(name, role, dateOfBirth) {
+    // add your code here
+    this.name = name;
+    this.role = role;
+    this.dateOfBirth = dateOfBirth;
+  }
+
+  addMovie(movie) {
+    // add your code here
+    this.movie = movie;
+  }
+
+  getName() {
+    // add your code here
+     return this.name;
+   
+  }
+
+  getRole() {
+    // add your code here
+    return this.role;
+    
+  }
+
+  getAge(age) {
+    // add your code here
+    this.age = age;
+    
+  }
+ 
+}
+
+const myMovie = new Movie("Get Out", "Jordan Peele");
+//Movie.constructor();
+console.log(myMovie);
+const firstActor = new StaffMember("Daniel Kaluuya", "Chris Washington", "1989");
+console.log(firstActor);
+myMovie.addStar(firstActor);
+
+/*var addStar = "Alisson Williams";
+firstActor = addStar.join(" ");  */
+
+console.log(myMovie.getStars().map(actor => `${actor.getName("Linda")} ${actor.getAge("30")}`));
+ const director = myMovie.getDirector();
+ console.log("Director:", director);
+console.log(myMovie.getStars);
+console.log(`Director: ${director.getName()}`);
